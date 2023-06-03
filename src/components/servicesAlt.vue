@@ -10,7 +10,7 @@
             </div>
             <div class="col-md-8">
               <div class="card-body pt-0">
-                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, enim commodi reiciendis, doloribus delectus.</p>
+                <p class="card-text">"Building excellence, one brick at a time. Trust our skilled masonry team to bring your vision to life with precision, quality, and craftsmanship. </p>
               </div>
             </div>
           </div>
@@ -24,7 +24,7 @@
             </div>
             <div class="col-md-8">
               <div class="card-body pt-0">
-                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel pariatur a quis praesentium ratione reprehenderit sint odio, corporis, nisi </p>
+                <p class="card-text">"Transform your space with our exceptional painting service. From residential to commercial projects, we bring life and color to your walls. </p>
               </div>
             </div>
           </div>
@@ -38,7 +38,7 @@
             </div>
             <div class="col-md-8">
               <div class="card-body pt-0">
-                <p class="card-text">expedita omnis fuga quia fugit incidunt, cupiditate deserunt modi delectus ad.</p>
+                <p class="card-text">"Power up your world with our reliable and efficient electrical services. From installations to repairs. Trust that our team will provide the best.</p>
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@
             </div>
             <div class="col-md-8">
               <div class="card-body pt-0">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi psa quasi, consequuntur,eos! Blanditiis, eius..</p>
+                <p class="card-text">"Transforming visions into reality, our 3D architectural design service brings your dreams to life. With meticulous attention to detail and cutting-edge technology...</p>
               </div>
             </div>
           </div>

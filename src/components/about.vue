@@ -6,19 +6,18 @@
                     <p class="muted m-0">Who we are</p>
                     <h1 class="pb-2">Our philosophy</h1>
                     <hr style="border-top: 2px solid; opacity:1;" >
-                    <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita id consectetur ad quis recusandae. Nulla nihil illum quasi dolorum explicabo. Praesentium voluptates ex rerum unde nisi, repellat suscipit hic corporis.</p>
+                    <p class="py-3">To create designs and structures that are aesthetic and robust that will journey through the African culture and climate. Growing up in a floody neighbourhood with the occasional leaky roof and unbearable heat has geared our company towards creating spaces and structures that won't suffer and cause discomfort to residents.  Your space is your sanctuary. </p>
                     <button class="btn btn-primary rounded-0 px-3">Read More</button>
                 </div>
             </div>
             <div class="col-lg-8 col-sm-12 text-dark">
                 <h4>Our story</h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, provident id optio in labore eius ipsum sed et. Minima ipsum accusantium maiores eveniet iure consequatur culpa non beatae itaque saepe?
+                    Experience the magic of harmonious designs that seamlessly blend functionality and aesthetics. Our dedicated team ensures timely execution with unwavering professionalism, delivering projects of the highest quality. With a focus on efficiency, we bring your vision to life, creating spaces that inspire and delight.
                 <div class="ms-4 mt-4">
                     <h5>What we believe</h5>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iure ab obcaecati nisi possimus, rerum illo laboriosam ut commodi sapiente dicta nihil veritatis hic perferendis facilis rem iste, est aperiam.
-          <!-- ../assets/img/avatar-05 -->
+                    Our Story begins with a carpenter in the mid 1980's in a town called Winneba, Ghana. His dream and desire to persevere  in the construction industry saw him move into the big city of Accra, Ghana. Gaining education and skill in carpentry he started this company which has since grown beyond his wildest dreams of just carpentry.  We aspire to grow even bigger to meet your needs. Join us as we tell our story to the world          <!-- ../assets/img/avatar-05 -->
 
-                <div class="my-4">
+                <!-- <div class="my-4">
                         <h5>Meet the Expects</h5>
                     <div class="circle-wrapper text-light">
                         <div class="circle">
@@ -73,7 +72,7 @@
                         </div>
                        
                     </div>
-                </div>
+                </div> -->
                 </div>
             </div>
         </div>        

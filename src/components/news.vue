@@ -8,7 +8,7 @@
         </h1>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3  ">
             <div class="col">
-                <div class="card">
+                <div class="card shadow">
                     <div class="bg-primary overImg" data-bs-toggle="modal" @click="selectedProject = 0" data-bs-target="#exampleModal"><i class="bi bi-image text-light fs-5 p-0 m-0"></i></div>
                     <img :src="projects[0].images[0]"  class="rounded-0 card-img-top" alt="...">
                     <div class="card-body">
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="col">
-                 <div class="card">
+                 <div class="card shadow">
                     <div class="card-body">
                         <div class="card-text">
                             <h4>{{projects[1].title}}</h4>
@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="col">
-                 <div class="card">
+                 <div class="card shadow">
                     <div class="bg-primary overImg" data-bs-toggle="modal" @click="selectedProject = 2" data-bs-target="#exampleModal"><i class="bi bi-image text-light fs-5 p-0 m-0"></i></div>
                     <img :src="projects[2].images[0]" class="rounded-0 card-img-top" alt="...">
                     <div class="card-body">
@@ -111,36 +111,43 @@ export default {
             slides: [],
             projects:[
                 {
-                    title: 'El Teide Volcano, Spain',
-                    details:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aut exercitationem accusantium ad beatae illo r adipisicing elit. Dolorum aut exercitationem accusantium ad beatae  voluptas suscipit non, hic blanditiis? Quos, officiis reiciendis odio aliquid eos inventore eum amet. Atque!',
-                    location:'Buena-Vista, Sakumono',
-                    images:  [
-                        new URL(`../assets/img/plane.jpg`,  import.meta.url).href,
-                        new URL(`../assets/img/plane.jpg`,  import.meta.url).href,
-                        new URL(`../assets/img/plane.jpg`,  import.meta.url).href,
-                        new URL(`../assets/img/plane.jpg`,  import.meta.url).href
-                    ]
-                },
-                {
-                    title: 'El Teide Volcano, Spain',
-                    details:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aut exercitationem accusantium ad beatae illo r adipisicing elit. Dolorum aut exercitationem accusantium ad beatae  voluptas suscipit non, hic blanditiis? Quos, officiis reiciendis odio aliquid eos inventore eum amet. Atque!',
+                    title: 'Pergola & Resturant, Alisa Hotel',
+                    details:`Alisa Hotel at North Ridge undertook a beautiful transformation with the addition of a poolside pergola, a wooden fence, and a stylish bar. The construction project aimed at enhancing the hotel's ambiance, providing guests with a serene and luxurious experience. These new features surely elevated the overall charm and appeal of Alisa Hotel.`,
                     location:'Alisa Hotel, North Ridge',
                     images:  [
-                        new URL(`../assets/img/post-07.jpg`,  import.meta.url).href,
-                        new URL(`../assets/img/plane.jpg`,  import.meta.url).href,
-                        new URL(`../assets/img/plane.jpg`,  import.meta.url).href,
-                        new URL(`../assets/img/plane.jpg`,  import.meta.url).href
+                        new URL(`../assets/img/alisa3.jpg`,  import.meta.url).href,
+                        new URL(`../assets/img/alisa4.jpg`,  import.meta.url).href,
+                        new URL(`../assets/img/alisa5.jpg`,  import.meta.url).href,
+                        new URL(`../assets/img/alisa1.jpg`,  import.meta.url).href,
+                        new URL(`../assets/img/alisa2.jpg`,  import.meta.url).href
+
                     ]
                 },
                 {
-                    title: 'El Teide Volcano, Spain',
-                    details:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aut exercitationem accusantium ad beatae illo r adipisicing elit. Dolorum aut exercitationem accusantium ad beatae  voluptas suscipit non, hic blanditiis? Quos, officiis reiciendis odio aliquid eos inventore eum amet. Atque!',
-                    location:'Kuawu, Easten Region',
+                    title: 'Pergola|Out Hut',
+                    details:`A pergola/wooden shelter and wooden fence are being constructed at Community 10 in Tema. These structures will enhance the aesthetics of the home and provide its residents with a shaded area to relax and socialize. The wooden fence will improve privacy and security, adding a touch of elegance to the scene. Image references are available`,
+                    location:'Private Client, Comm 10 Tema',
                     images:  [
-                        new URL(`../assets/img/wood.jpg`,  import.meta.url).href,
-                        new URL(`../assets/img/plane.jpg`,  import.meta.url).href,
-                        new URL(`../assets/img/post-08.jpg`,  import.meta.url).href,
-                        new URL(`../assets/img/plane.jpg`,  import.meta.url).href
+                        new URL(`../assets/img/c101.jpg`,  import.meta.url).href,
+                        new URL(`../assets/img/c102.jpg`,  import.meta.url).href,
+                        new URL(`../assets/img/c103.jpg`,  import.meta.url).href,
+                        new URL(`../assets/img/c104.jpg`,  import.meta.url).href,
+                        new URL(`../assets/img/c105.jpg`,  import.meta.url).href,
+                        new URL(`../assets/img/c109.jpg`,  import.meta.url).href,
+                    ]
+                },
+                {
+                    title: 'Facelift & Office Contru.',
+                    details:`This construction project involved the transforming of one open area into six individual office spaces. The services required for this project included installing plasterboard walls, applying paint, setting up electrical wiring and fixtures, implementing plumbing systems, and carrying out the necessary finishing touches. This comprehensive project encompasses all aspects, from A to Z, to create functional and visually appealing office spaces.`,
+                    location:"Hui'er Hearing, Sakumono Tema" ,
+                    images:  [
+                        new URL(`../assets/img/ejunction1.jpg`,  import.meta.url).href,
+                        new URL(`../assets/img/ejunction2.jpg`,  import.meta.url).href,
+                        new URL(`../assets/img/ejunction3.jpg`,  import.meta.url).href,
+                        new URL(`../assets/img/ejunction4.jpg`,  import.meta.url).href,
+                        new URL(`../assets/img/ejunction5.jpg`,  import.meta.url).href,
+                        new URL(`../assets/img/ejunction6.jpg`,  import.meta.url).href,
+                        new URL(`../assets/img/ejunction8.jpg`,  import.meta.url).href,
                     ]
                 }
             ]

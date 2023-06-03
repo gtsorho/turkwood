@@ -83,7 +83,9 @@ export default {
     border: 2px solid rgb(143, 61, 3) !important;
   }
 </style>
+
 <style lang="scss">
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap');
   p,div,label,span, h1,h2,h3,h4.h5,h6,li,ol{

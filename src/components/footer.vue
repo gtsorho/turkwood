@@ -7,8 +7,7 @@
                     <h4 class="d-inline mx-3 mt-3">Turkwood Constuction Ltd</h4>
                 </div>
                 <p class="my-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam illo eum voluptatibus cupiditate deleniti ullam nam eius vero libero? Perspiciatis ut porro provident quidem enim illo dolore, rerum iste aliquid!
-                </p>
+                        We are a trusted construction company committed to delivering high-quality projects with integrity, innovation, and customer satisfaction. Contact us for your construction needs today.                </p>
                 <div class="social-icons">
                     <i class="bi bi-instagram"></i>
                     <i class="bi bi-facebook"></i>
@@ -25,7 +24,8 @@
                 <div class="text-end my-5">
                     <p class="m-0"><span class="text-light fw-bold ">Location</span>: Tema Comm-16 Lashibi</p>
                     <p class="m-0"><span class="text-light fw-bold ">email</span>: info@turkwood.com</p>
-                    <p class="m-0"><span class="text-light fw-bold ">Contact</span>: +233 54 005 5888</p>
+                    <p class="m-0"><span class="text-light fw-bold ">Contact</span>: +233 54 437 3693</p>
+                    <p class="m-0"><span class="text-light fw-bold "></span> +233 24 426 5145</p>
                 </div>
             </div>
         </div>

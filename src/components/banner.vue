@@ -1,7 +1,7 @@
 <template>
 <transition v-bind:css="false" name="banner">
-<div class="slider">
-  <div  :style="{ 'background-image': 'linear-gradient(45deg, black, transparent), url(' + currentImage + ')'}" ref="bgImage" class="brand-slide jumbo ">
+<div class="slider" id="home">
+  <div  :style="{ 'background-image': 'linear-gradient(45deg, #404040, transparent), url(' + currentImage + ')'}" ref="bgImage" class="brand-slide jumbo ">
       <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container-fluid">
           <a class="navbar-brand mx-5" href="#">
@@ -14,7 +14,7 @@
             <div class="navbar-nav mx-4 d-flex justify-content-between" style="width: 70%">
               <router-link class="nav-link" :to="{name:'home', hash:'#home'}">HOME</router-link>
               <router-link class="nav-link" :to="{name:'home', hash:'#about'}">ABOUT</router-link>
-              <router-link class="nav-link" :to="{name:'home', hash:'#about'}">SERVICES</router-link>
+              <router-link class="nav-link" :to="{name:'home', hash:'#services'}">SERVICES</router-link>
               <router-link class="nav-link" :to="{name:'home', hash:'#news'}">PROJECTS</router-link>
               <router-link class="nav-link" :to="{name:'home', hash:'#contact'}">CONTACT</router-link>
               <router-link class="nav-link bg-primary px-4 text-center" :to="{name:'home', hash:'#services'}">QUOTATION</router-link>
@@ -25,31 +25,43 @@
 
 
   <div class="brand">
-    <h2 ref="brandText" class="brand-text fw-bolder" >{{ brandText }}</h2>
-    <h2 ref="subText" class="sub-text text-break w-75">{{ subText }}</h2>
-    <button ref="brandBtn" class="brand-btn btn btn-transparent border-3 rounded-0  py-2 border-light text-light ">Get A Quote</button>
+    <div class="container textbg">
+       <h1 class="highlight-text brand-text text-center w-75" ref="brandText">
+        <span  style="font-weight:800 !important " v-for="(char, index) in brandText" :key="index" :class="{ 'highlighted': highlightedIndex === index }" @mouseover="highlightIndex(index)" @mouseout="resetHighlight">
+          {{ char }}
+        </span>
+      </h1>
+      <!-- <h2  class="" style="font-weight:800!important ">{{ brandText }}</h2> -->
+    <h2 ref="subText" class="sub-text text-break w-50 text-break">{{ subText }} <span class="fw-bold text-primary"> "UNLEASH  YOUR SANCTUARY IN SPACE, DREAM IT, LIVE IT!"</span></h2>
+    <router-link  ref="brandBtn" class="brand-btn btn btn-transparent border-3 rounded-0  py-2 border-light text-light " :to="{name:'home', hash:'#services'}">Get A Quote</router-link>
+
+    </div>
   </div>
   <!-- <div class="address d-flex justify-content-evenly w-100"> 
       <p >ADDRESS : 143 Avenue, Miami ( Florida )</p>
       <p>EMAIL : email@construction.com</p>
   </div> -->
+
  </div>
  
 </div>
 </transition>
+ 
 </template>
   <script>
   export default {
     data() {
       return {
-        brandText: 'Constructive Co.',
-        subText: 'The Craftsmanship ecosystem that thrives on dedication, skill, and creativity.',
+        text: 'Your Text Here',
+        highlightedIndex: null,
+        brandText: ' Imagination Meets Design',
+        subText: 'Delivering to you not only ideas that work but work that stand out. ',
         maxRotation: 5,
         maxTranslation: 10,
         images: [
-        'woodwork.jpg',
-        'trusses.jpg',
-        'plane.jpg'
+        'c101.jpg',
+        'c102.jpg',
+        'ejuction1.jpg'
       ],
       currentImageIndex: 0
       }
@@ -70,6 +82,7 @@
     //   }
     // },
     mounted() {
+
       window.addEventListener('mousemove', this.handleMouseMove);
 
       setInterval(() => {
@@ -79,6 +92,12 @@
 
     },
     methods: {
+       highlightIndex(index) {
+       this.highlightedIndex = index;
+    },
+    resetHighlight() {
+      this.highlightedIndex = null;
+    },
       handleMouseMove(event) {
         const { clientX, clientY } = event;
         const { offsetLeft, offsetTop, offsetWidth, offsetHeight } = this.$refs.brandText;
@@ -104,6 +123,53 @@
 
 
 <style scoped>
+
+
+
+
+.highlight-text {
+  display: inline-block;
+  /* font-size: 24px; */
+}
+
+.highlighted {
+  transition: 0.0s;
+  color: rgb(170, 97, 19); /* Customize the highlight color as per your preference */
+  /* color: #404040; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.textbg{
+   /* position: absolute; */
+   margin-top: 5%;
+  height: 80%;
+  width: 75%;
+  background-color: rgba(0, 0, 0, 0.628);
+}
 .brand {
   position: relative;
   width:100%;
@@ -112,14 +178,14 @@
 
 .brand-text  {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 20%;
+  left: 53%;
   transform-style: preserve-3d;
 }
 
  .sub-text {
   position: absolute;
-  top: 70%;
+  top: 40%;
   left: 50%;
   transform-style: preserve-3d;
 }
@@ -152,7 +218,7 @@
   color:#fff;
   text-align: center;
   position: absolute;
-  top: 85%;
+  top: 60%;
   left: 50%;
   transform-style: preserve-3d;
   transform: translate(-50%, -50%);

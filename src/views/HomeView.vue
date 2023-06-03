@@ -1,13 +1,12 @@
 <template>
  
-    <Banner id="home" />
+    <Banner  />
     <Services id="services"/>
     <ServicesAlt/>
     <About id="about"/>
     <News/>
     <Footer id="contact"/>
 
-``
 </template>
 
 <script>
