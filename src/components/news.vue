@@ -186,7 +186,9 @@ export default {
 </style>
 <style scoped>
 
-
+.card-body{
+    height: 50%;
+}
 .card > .overImg{
     position: absolute;
     top: 50%;
@@ -221,7 +223,7 @@ img{
     object-fit: cover;
 }
 .card-text{
-    margin-block: 25px;
+    margin-top: 25px;
     height: 50%;
 }
 
